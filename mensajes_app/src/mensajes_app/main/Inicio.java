@@ -11,7 +11,6 @@ public class Inicio {
 
 		} catch (Exception e) {
 			System.out.println(e);
-			System.out.println("suu");
 		}
 
 	}
