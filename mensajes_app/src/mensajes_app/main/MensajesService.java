@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class MensajesService {
 
+		static Scanner input = new Scanner(System.in);
 		public static void crearMensaje() {
-			Scanner input = new Scanner(System.in);
 			String mensaje, nombre;
 			
 			System.out.println("Escribe el mensaje:");
@@ -27,7 +27,10 @@ public class MensajesService {
 		}
 		
 		public static void borrarMensajes() {
+			System.out.println("Id del mensaje a borrar: ");
+			int id_mensaje = input.nextInt();
 			
+			MensajesDAO.borrarMensajeDB(id_mensaje);
 		}
 		
 		public static void editarMensaje() {
